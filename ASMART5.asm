@@ -1,8 +1,11 @@
+;ASCII art
+;Graficzne przedsawienie RSA 1024
+
 .186					;dla pusha, popa 
 
 data1 segment
        tab_count    db  0
-       tab_offset   dw  128 dup(?)                       ;w sumie wartosci randomowe moga zaostac i tak je zmieniam
+       tab_offset   dw  128 dup(?)                       ;random
        tab_arg      db  300 dup('$')					;tablica z parsera. Jest tutaj niezmieniony, sparsowany input
        tab_converted_arg db 16 dup(?)
        tab_wart     db  153 dup(0)						;tutaj przechowywane sa finalne wartosci wypisywane na ekran
